@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechStore</title>
+
+<link rel="stylesheet" href="style_3.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">TechStore</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <button id="themeBtn">🌙</button>
+            <div class="cart">
+                🛒 <span id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Latest Electronics Collection</h1>
+        <p>Shop Smartphones, Laptops, Headphones & Accessories</p>
+        <button onclick="scrollToProducts()">Shop Now</button>
+    </div>
+</section>
+
+<section class="controls">
+    <input type="text" id="searchInput" placeholder="Search Products...">
+
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Headphone">Headphone</option>
+    </select>
+
+    <select id="sortPrice">
+        <option value="default">Sort By</option>
+        <option value="low">Price Low-High</option>
+        <option value="high">Price High-Low</option>
+    </select>
+</section>
+
+<section class="products-section" id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="products" id="productContainer">
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<!--<textarea placeholder="Your Message"></textarea>-->
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<h2>Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+</div>
+
+<button id="topBtn">↑</button>
+
+<script src="script_3.js"></script>
+
+</body>
+</html>
